@@ -272,6 +272,7 @@ main {
 .page-light {
    background-color: #F8F9FB;
    color: var(--dark);
+   padding-bottom: 100px;
 }
 
 .calc-foot {
@@ -351,6 +352,8 @@ main {
    font-size: 18px;
    font-weight: 500;
    color: #BDBDBD;
+   position: relative;
+   top: -.3em;
 }
 
 .crypto-item__description {
@@ -415,12 +418,14 @@ main {
 
 .page-gradient {
    background: linear-gradient(180deg, var(--purple) 0%, var(--dark) 100%);
+   padding-top: 88px;
+   padding-bottom: 88px;
 }
 
 .form {
    background-color: var(--blue);
    border-radius: 16px;
-   padding: 30px 30px;
+   padding: 54px 50px;
    display: flex;
    justify-content: space-between;
 }
@@ -433,6 +438,7 @@ main {
    margin-top: 0;
    font-size: 32px;
    font-weight: 700;
+   margin-bottom: 27px;
 }
 
 .form-text__description {
@@ -457,6 +463,8 @@ main {
    color: var(--white);
    width: 100%;
    margin-right: 40px;
+   padding: 10px 0px;
+   outline: none;
 }
 
 .form-letter__input::placeholder {
@@ -467,8 +475,53 @@ main {
    border: none;
    background-color: var(--white);
    color: var(--dark);
-   font-size: 15px;
+   font-size: 18px;
    font-weight: 500;
-   padding: 15px 32px;
+   padding: 18px 32px;
    border-radius: 32px;
+   transition: all 0.3s ease 0s;
+}
+
+.form-letter__btn:hover {
+   background-color: var(--purple);
+   color: var(--white);
+}
+
+footer {
+   padding-top: 60px;
+   padding-bottom: 60px;
+}
+
+.container {}
+
+.footer-inner {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.footer-text {}
+
+.footer-list {
+   display: flex;
+   justify-content: space-between;
+   list-style-type: none;
+   align-items: center;
+}
+
+.footer-list_item {
+   margin-left: 32px;
+}
+
+.footer-list_item img {
+   transition: all 0.3s ease 0s;
+}
+
+.footer-list_item img:hover {
+   background-color: var(--blue);
+   border-radius: 5px;
+}
+
+.footer-list_item:first-child {
+   margin-left: 0;
 }

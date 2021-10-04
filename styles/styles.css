@@ -18,6 +18,25 @@ body {
    margin-top: 60px;
 }
 
+.menu-btn {
+   width: 30px;
+   height: 30px;
+   position: relative;
+}
+
+.menu-btn span {
+   position: absolute;
+   width: 30px;
+   height: 2px;
+   top: 50%;
+   left: 50%;
+   background-color: maroon;
+}
+
+.menu li a {
+   color: #fff;
+}
+
 .container {
    max-width: 1202px;
    padding: 0px 15px;
@@ -334,6 +353,7 @@ main {
    padding: 52px 30px 47px;
    box-sizing: border-box;
    transition: all 0.3s ease 0s;
+   height: 100%;
 }
 
 .crypto-item:hover {
@@ -492,15 +512,11 @@ footer {
    padding-bottom: 60px;
 }
 
-.container {}
-
 .footer-inner {
    display: flex;
    justify-content: space-between;
    align-items: center;
 }
-
-.footer-text {}
 
 .footer-list {
    display: flex;
@@ -525,3 +541,60 @@ footer {
 .footer-list_item:first-child {
    margin-left: 0;
 }
+
+@media (max-width: 869px) {
+   .header {
+      margin-top: 40px;
+   }
+
+   .stat {
+      padding-top: 160px;
+      padding-bottom: 130px;
+   }
+
+   .main-text__title {
+      font-size: 50px;
+   }
+
+   .page-light {
+      padding-bottom: 50px;
+   }
+
+   .calc-foot {
+      margin-bottom: 60px;
+   }
+
+   .crypto {
+      flex-wrap: wrap;
+   }
+
+   .crypto-item {
+      flex: 0 0 49%;
+   }
+
+   .crypto-item:last-child {
+      margin-top: 15px;
+   }
+
+   .page-gradient {
+      padding-top: 60px;
+      padding-bottom: 40px;
+   }
+
+   footer {
+      padding-top: 40px;
+      padding-bottom: 40px;
+   }
+}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 810px) {
+   nav {
+      display: none;
+   }
+}
+
+@media (max-width: 576px) {}
+
+@media (max-width: 1200px) {}
